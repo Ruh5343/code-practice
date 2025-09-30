@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+while (n!=1){
+cout<<n<<" "; //Input: 6. 6 is even → 6 / 2 = 3. 3 is odd → 3 * 3 + 1 = 10. 10 is even → 10 / 2 = 5. 5 is odd → 5 * 3 + 1 = 16 continues until it reaches 1.
+if(n%2==0){
+n=n/2;
+}
+else{
+n=(n*3)+1;
+}
+
+}
+cout<<1<<endl;    //Since the Collatz sequence always ends at 1, we need to make sure 1 shows up in the output.That’s why after the loop finishes, we explicitly print 1
+return 0;
+}

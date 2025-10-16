@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int D;
+    string M;
+    cin>>D>>M;
+    string x="September";
+    int y=5;
+    if(D==y && M==x){
+    cout<<"BiaBiaBia"<<endl;
+    }else{
+    cout<<"NaNaNa"<<endl;
+    }
+
+return 0;
+}

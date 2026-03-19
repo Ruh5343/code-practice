@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string n;
+    cin>>n;
+set <char> name;
+for(char c: n){
+
+    name.insert(c);
+}
+
+if(name.size()%2==0){
+    cout<<"CHAT WITH HER!"<<endl;
+}
+else{
+    cout<<"IGNORE HIM!"<<endl;
+}
+return 0;
+}

@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,h,a,s;
+    cin>>n>>h>>a>>s;
+int l,m,p,o;
+    l=(6-n)*10;
+    m=h*2;
+    p=a/5;
+    o=s/110;
+    int sum=l+m+p+o;
+    if(sum>=30){
+        cout<<"hungry"<<endl;
+    }else{
+    cout<<"not hungry"<<endl;
+    }
+return 0;
+}

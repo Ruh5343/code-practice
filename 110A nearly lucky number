@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+long long n,c=0,d=0;
+cin>>n;
+for (long long i=n; i>0;i=i/10){
+    if(i%10==4||i%10==7){
+        c++;
+    }
+}
+if(c==0){
+    cout<< "NO\n";
+    return 0;
+}
+while(c>0){
+if(c%10!=4&&c%10!=7){
+    d++;
+}
+c=c/10;
+}
+if(d>0){
+    cout << "NO\n";
+}else{
+cout<<"YES\n";
+}
+
+
+    return 0;
+}

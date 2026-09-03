@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int32_t main(){
+    int t; cin>>t;
+    while(t--){
+long long n,sum=(long long)0; cin>>n;
+for (long long i=1;i<=n; i=i*2){
+    sum=sum+i;
+}
+long long sum1= (long long)n*(n+1)/2; //(when n=4)) 1+2+3+4-1-2-4-1-2-4=-1-2+3-4=-4
+
+long long sum2=(long long)2*(sum);
+cout<<sum1-sum2<<endl;
+    }
+return 0;
+}
